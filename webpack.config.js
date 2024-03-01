@@ -24,8 +24,8 @@ const config = /** @type {import('webpack').Configuration} */ ({
     rules: [
       {
         test: /\.(ts|tsx)$/i,
-        loader: 'ts-loader',
-        exclude: ['/node_modules/'],
+        loader: 'swc-loader',
+        exclude: /(node_modules)/, // removing this breaks tree-shaking
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,

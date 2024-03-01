@@ -5,7 +5,7 @@ const schema = object({
   age: number(),
 });
 
-function component() {
+function component(): HTMLDivElement {
   const element = document.createElement('div');
 
   const { name, age } = parse(schema, {
