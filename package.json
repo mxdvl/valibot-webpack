@@ -16,6 +16,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@mxdvl/valibot": "npm:@jsr/mxdvl__valibot@^0.29.0",
     "valibot": "0.29.0"
   },
   "devDependencies": {
